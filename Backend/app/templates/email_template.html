@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Alert</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        .thankyou {
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cleaning Alert</h1>
+        <p>In next week,</p>
+        <p><strong>Predicted voltage:</strong> {{ prediction }}</p>
+        <p><strong>Humidity:</strong> {{ humidity }} (RH)</p>
+        <p><strong>Temperature:</strong> {{ temperature }} (F)</p>
+        <p>The voltage is lower than the expected value for optimal performance.<br>
+        Please clean the solar panel surface before {{ date }} to optimize performance.</p>
+        <p class="thankyou">Thank you.</p>
+    </div>
+</body>
+</html>

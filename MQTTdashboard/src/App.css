@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+body{
+    margin: 0;
+    padding: 10px;
+    background-color: #1d2634;
+    color: #9e9ea4;
+    overflow: hidden;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar body body body";
+    height: 100vh;
+}

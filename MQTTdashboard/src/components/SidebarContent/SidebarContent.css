@@ -1,0 +1,44 @@
+.sidebar{
+    grid-area: sidebar;
+    border: 2px solid rgb(5, 5, 58);
+    border-radius: 10px;
+    height:97%;
+
+
+}
+
+.brandName{
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.brandName h3{
+    text-transform: uppercase;
+}
+
+.sidebarList{
+    margin: 10px;
+    padding-top:50px;
+}
+
+.sidebar-list-item{
+    list-style: none;
+    margin: 10px;
+}
+
+.sidebar-list-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon{
+    color: lightgreen;
+    padding-right: 5px;
+}
+
+
+
+
